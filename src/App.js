@@ -7,12 +7,14 @@ import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
 import Navbar from './components/Navbar';
+import Modal from './components/Modal';
 
 function App() {
   return (
      <div>
          <>
              <Navbar/>
+             <Modal/>
              <Switch>
                  <Route exact path='/' component={ProductList}/>
                  <Route path='/details' component={Details}/>
