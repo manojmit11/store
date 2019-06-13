@@ -8,18 +8,16 @@ import Cart from './components/Cart';
 import Default from './components/Default';
 import Navbar from './components/Navbar';
 
-
-
 function App() {
   return (
      <div>
          <>
              <Navbar/>
              <Switch>
-                 <Route exact path='/' component={ProductList}></Route>
-                 <Route path='/details' component={Details}></Route>
-                 <Route path='/cart' component={Cart}></Route>
-                 <Route component={Default}></Route>
+                 <Route exact path='/' component={ProductList}/>
+                 <Route path='/details' component={Details}/>
+                 <Route path='/cart' component={Cart}/>
+                 <Route component={Default}/>
              </Switch>
          </>
      </div>
